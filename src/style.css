@@ -1,0 +1,171 @@
+:root{
+    --primaria-violeta:hsl(257, 40%, 49%);
+    --primaria-magenta:hsl(300, 69%, 71%);
+    --fonte-heading:'Poppins', sans-serif;
+    --fonte-body:'Open Sans', sans-serif;
+}
+
+body{
+    background: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--primaria-violeta);  
+     
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    
+}
+.logo-empresa{
+    width: 190px;   
+}
+.banner{
+    width: 700px;
+}
+.logos{
+    margin-top: 5%;
+    margin-left: 60px;
+}
+.textos{
+    margin-left: 40px;
+    margin-right: 70px;
+    margin-top: 220px;
+}
+
+.textos h1{ 
+    font-family: var(--fonte-heading);
+    color: #fff;
+    line-height: 60px;
+    font-size: 2.2em;
+}
+.textos p{
+    font-family: var(--fonte-body);
+    opacity: 0.8;
+    color: #fff;
+}
+btn{
+    background-color: #fff;
+    padding: 15px 55px;
+    border-radius: 30px;
+    color: var(--primaria-violeta);
+    font-family: var(--fonte-body);
+}
+.icones{
+    display: flex;
+    height: 0vh;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.icones-flex{
+    display: flex;
+}
+.icones li{
+    margin: 10px;
+}
+.fa-facebook-f{
+    font-size: 1.2em;
+    color: #fff;
+    padding: 10px;
+    border-radius: 40px;
+    border: 1px solid #fff;
+}
+.fa-twitter{
+    font-size: 1.2em;
+    color: #fff;
+    padding: 10px;
+    border-radius: 40px;
+    border: 1px solid #fff;
+}
+.fa-twitter:hover{
+    color: var(--primaria-magenta);
+    border: 1px solid var(--primaria-magenta);
+}
+.fa-instagram{
+    font-size: 1.2em;
+    color: #fff;
+    padding: 10px;
+    border-radius: 40px;
+    border: 1px solid #fff;
+}
+
+@media(max-width:600px){
+    body{
+        background: url(../images/bg-mobile.svg);
+        background-size: 200%;
+        background-repeat: no-repeat;
+        background-color: var(--primaria-violeta);  
+         
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+    }
+    .banner{
+        width: 320px;
+    }
+    .logos{
+       margin: 0 auto;
+    }
+    .logo-empresa{
+        margin-top: 50px;
+    }
+    .textos{
+        text-align: center;
+       margin: 20px 38px;
+    }
+    .textos h1{ 
+        font-size: 1.2em;
+        line-height: 28px;
+    }
+    .icones{
+        display: flex;
+        height: 16vh;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width:1200px){
+    body{
+        background: url(../images/bg-mobile.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: var(--primaria-violeta);  
+         
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+    }
+    .banner{
+        width: 520px;
+    }
+    .logos{
+       margin: 0 auto;
+    }
+    .logo-empresa{
+        margin-top: 50px;
+    }
+    .textos{
+        text-align: center;
+       margin: 20px 38px;
+    }
+    .textos h1{ 
+        font-size: 1.2em;
+        line-height: 28px;
+    }
+    .icones{
+        display: flex;
+        height: 16vh;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+}
